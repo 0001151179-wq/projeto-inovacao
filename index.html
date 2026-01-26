@@ -11,28 +11,73 @@
 </head>
 
 <body>
+    <header>
+        <section>
+            <h1>Problemas na Unidade</h1>
+        </section>
+    </header>
     <main>
         <section>
             <form action="" method="post" autocomplete="on">
                 <div class="form">
-                    <input type="text" name="nome" id="inome" autocomplete="name" placeholder="nome:" required>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" autocomplete="name" placeholder="Digite aqui:" class="cem" required>
                 </div>
+
+                <hr>
+
                 <div class="form">
-                    <label>Turno</label>
+                    <label class="label">Turno:</label>
                     <input type="radio" name="Turno" id="imanha"> <label for="imanha">Manhã</label>
                     <input type="radio" name="Turno" id="itarde"> <label for="itarde">Tarde</label>
                     <input type="radio" name="Turno" id="inoite"> <label for="inoite">Noite</label>
                 </div>
+
+                <hr>
+
                 <div class="form">
-                    <label for="iturma">Turma</label>
-                    <select name="turma" id="iturma">
+                    <label for="iturma" class="label">Turma:</label>
+                    <select name="turma" id="iturma" required>
                         <option value="0" selected disabled>selecione</option>
                         <option value="1">Mecânica</option>
+                        <option value="2">Meio Ambiente</option>
+                        <option value="3">T.I</option>
+                        <option value="4">Eletro-Mecânica</option>
                     </select>
+                </div>
+
+                <hr>
+
+                <div class="form">
+                    <label for="iproblem" class="label" >Local do Problema:</label>
+                    <input type="text" name="problem" id="iproblem" required class="cem" placeholder="Digite aqui:">
+                </div>
+
+                <hr>
+
+                <div class="form">
+                    <label for="" class="label" >Descrição detalhada do problema encontrado:</label>
+                    <textarea name="" id="" required maxlength="2000" style="resize: none;" placeholder="Digite aqui:"></textarea>
+                </div>
+
+                <hr>
+
+                <div class="form" id="img">
+                    <label for="ifoto" class="label">Imagem do Problema:</label>
+                    <input type="file" name="foto" id="ifoto">
+                </div>
+
+                <hr>
+
+                <div class="form">
+                    <input type="submit" value="Enviar">
                 </div>
             </form>
         </section>
     </main>
+    <footer>
+        <p>Formulário desenvolvido pelos Botinhas</p>
+    </footer>
 </body>
 
 </html>
