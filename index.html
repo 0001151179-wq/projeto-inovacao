@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilo/style.css" media="all">
+
+    <title>Formulário</title>
+
+</head>
+
+<body>
+    <main>
+        <section>
+            <form action="" method="post" autocomplete="on">
+                <div class="form">
+                    <input type="text" name="nome" id="inome" autocomplete="name" placeholder="nome:" required>
+                </div>
+                <div class="form">
+                    <label>Turno</label>
+                    <input type="radio" name="Turno" id="imanha"> <label for="imanha">Manhã</label>
+                    <input type="radio" name="Turno" id="itarde"> <label for="itarde">Tarde</label>
+                    <input type="radio" name="Turno" id="inoite"> <label for="inoite">Noite</label>
+                </div>
+                <div class="form">
+                    <label for="iturma">Turma</label>
+                    <select name="turma" id="iturma">
+                        <option value="0" selected disabled>selecione</option>
+                        <option value="1">Mecânica</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
