@@ -1,11 +1,9 @@
 @charset "UTF-8";
 
-
 :root {
-    --cor1: #c2f8de;
-    --cor2: #354B40;
-    --cor3: #09F483;
-    --cor4: #3CA06F;
+    --cor1: #3c848d;
+    --cor2: #83a5a5;
+    --cor3: #7595BF;
 }
 
 * {
@@ -15,15 +13,20 @@
 }
 
 body {
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
-    background-color: var(--cor1);
+}
+
+body {
+    background-color: var(--cor3);
+    box-sizing: border-box;
 }
 
 header {
-    background-color: var(--cor2);
+    background-color: var(--cor1);
     height: 60px;
     padding: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.603);
 }
 
 header h1 {
@@ -41,6 +44,10 @@ main {
     border-radius: 8px;
     background-color: white;
     font-size: 18px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.322);
+
+    transition: .5s ease;
 }
 
 div.form {
@@ -85,7 +92,8 @@ input[type="file"]::file-selector-button {
     display: block;
     width: 100%;
     font-size: 16px;
-    background-color: white;
+    background-color: var(--cor1);
+    color: white;
     border-radius: 5px;
     margin-top: 20px;
     padding: 10px;
@@ -95,7 +103,7 @@ input[type="file"]::file-selector-button {
 }
 
 input[type="file"]::file-selector-button:hover {
-    background-color: var(--cor4);
+    background-color: var(--cor3);
     color: white;
 }
 
@@ -108,7 +116,8 @@ footer p {
 input[type="submit"] {
     width: 100%;
     font-size: 16px;
-    background-color: white;
+    background-color: var(--cor1);
+    color: white;
     border-radius: 5px;
     cursor: pointer;
     padding: 5px;
@@ -117,11 +126,18 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: var(--cor4);
+    background-color: var(--cor3);
+    color: white;
+    font-weight: bold;
     transform: translateY(-10px);
 }
 
 footer {
-    background-color: var(--cor2);
+    background-color: var(--cor1);
     padding: 10px;
+}
+
+footer abbr  {
+    font-style: italic;
+    text-decoration: underline;
 }
