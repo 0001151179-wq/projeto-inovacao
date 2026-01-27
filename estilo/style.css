@@ -25,6 +25,7 @@ body {
 header {
     background-color: var(--cor1);
     height: 60px;
+    width: 100%;
     padding: 10px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.603);
 }
@@ -133,6 +134,7 @@ input[type="submit"]:hover {
 }
 
 footer {
+    width: 100%;
     background-color: var(--cor1);
     padding: 10px;
 }
